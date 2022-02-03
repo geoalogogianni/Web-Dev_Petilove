@@ -2,6 +2,10 @@ body {
     background-color: #FFF7F6;
 }
 
+.bg-light {
+  background-color: #FFF7F6 !important;
+}
+
 .footer {
     position: fixed;
     left: 0;
@@ -34,11 +38,17 @@ body {
 
 .nav-item {
     margin-right: 30px;
+   
+}
+.nav-item a {
+  z-index: 500;
 }
 
 .navbar-brand {
     padding-right: 50px;
 }
+
+
 
 .debug {
     border:1px solid red;
@@ -46,6 +56,7 @@ body {
 
 .container {
     display: contents;
+    padding-top: 20px;
 }
 
 #navbarNav > ul {
@@ -56,7 +67,8 @@ body {
     transform: translate(-50%, -50%);
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 30px
+    font-size: 30px;
+    /* padding-top: 50px; */
 }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
@@ -147,6 +159,9 @@ dt , dd {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
 }
+.content > dd > a:hover {
+  color: #b56e6e;
+}
 
 
   /* jssor slider loading skin spin css */
@@ -155,6 +170,13 @@ dt , dd {
     animation-duration: 1.6s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+
+.contact {
+  
+  position: relative; 
+  padding: 15px;
+  font-size: 1.3em;
 }
 
 @keyframes jssorl-009-spin {
@@ -181,3 +203,51 @@ dt , dd {
 .jssora051:hover {opacity:.8;}
 .jssora051.jssora051dn {opacity:.5;}
 .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+
+
+.contactForm{
+  width: fit-content;
+}
+
+
+.googlemap {
+  position: relative;
+  padding-bottom: 45%;  
+  height: 0;
+  overflow: hidden;
+ 
+ 
+
+}
+
+.googlemap iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100% !important;
+height: 65% !important;
+padding-top: 5%;
+}
+
+
+#spinner{
+  display: none;
+}
+
+.catAnimated{
+  position: fixed;
+  bottom: 48px;
+
+}
+
+@media only screen and (max-width: 1130px) {
+ 
+  .catAnimated img {
+    width: 250px;
+  }
+}
+/* @media only screen and (min-device-width: 1131px){
+
+ } */
+
+
